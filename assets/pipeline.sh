@@ -15,7 +15,7 @@ echo "(3) Release (committing to repo)"
 git add .
 git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
 git push origin master
-git status
+
 
 echo "(4) Deploy (deployed to production)"
 npm run start
