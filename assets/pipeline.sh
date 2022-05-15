@@ -9,13 +9,11 @@ else
    echo "Build failed"
    exit
 fi
-echo "(2) Test (code testing, i.e. unit tests)"
 
-echo "(3) Release (committing to repo)"
+echo "(2) Release (committing to repo)"
 git add .
 git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
 git push origin master
 
-
-echo "(4) Deploy (deployed to production)"
+echo "(3) Deploy (deployed to production)"
 npm run start
