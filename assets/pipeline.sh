@@ -12,7 +12,7 @@ fi
 
 echo "(2) Release (committing to repo)"
 git add .
-git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
+git commit -m "$*"
 git push
 
 echo "(3) Deploy (deployed to production)"
