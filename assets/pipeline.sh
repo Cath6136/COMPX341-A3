@@ -15,6 +15,7 @@ echo "(2) Release (committing to repo)"
 git add .
 git add -u
 
+#Before the application is committed, it checks if a commit description has been added. If not, the application will exit.
 read -r -p 'Commit desciption: ' desc
 if [ -z "$desc" ]
 then
@@ -22,6 +23,7 @@ then
      exit
 fi
 
+#Commits to github using the discription given from the terminal.
 git commit -m "$desc"
 git push
 
